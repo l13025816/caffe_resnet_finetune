@@ -1,0 +1,1 @@
+# caffe_resnet_finetune
