@@ -26,7 +26,7 @@ for filename in dirnames:
                 newfilename = filename.replace(".png",".jpg")
                 # cv2.imshow("Image",img)
                 # cv2.waitKey(0)
-                cv2.imwrite(path + newfilename,img)
+                cv2.imwrite(path + '/'+newfilename,img)
         elif os.path.splitext(filename)[1] == '.bmp':
                 # print(filename)
                 img = cv2.imread(path + filename)
@@ -34,12 +34,13 @@ for filename in dirnames:
                 newfilename = filename.replace(".bmp",".jpg")
                 # cv2.imshow("Image",img)
                 # cv2.waitKey(0)
-                cv2.imwrite(path + newfilename,img)
-        elif os.path.splitext(filename)[1] == '.gif':
+                cv2.imwrite(path + '/'+newfilename,img)
+        elif os.path.splitext(filename)[1] == '.tif':
                 # print(filename)
                 img = cv2.imread(path + filename)
-                print(filename.replace(".gif",".jpg"))
-                newfilename = filename.replace(".gif",".jpg")
+                print(filename.replace(".tif",".jpg"))
+                newfilename = filename.replace(".tif",".jpg")
                 # cv2.imshow("Image",img)
                 # cv2.waitKey(0)
-                cv2.imwrite(path + newfilename,img)
+                print (path + '/'+newfilename)
+               #cv2.imwrite(path + '/'+newfilename,img)
